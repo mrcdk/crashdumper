@@ -94,7 +94,7 @@ class CrashDumper
 		
 		session = new SessionData(sessionId_, data);
 		
-		system = new SystemData();
+		//system = new SystemData();
 		
 		endl = SystemData.endl();
 		sl = SystemData.slash();
@@ -395,7 +395,7 @@ class CrashDumper
 	 */
 	
 	private function systemStr():String {
-		return system.summary();
+		return new SystemData().summary();
 	}
 	
 	/**
